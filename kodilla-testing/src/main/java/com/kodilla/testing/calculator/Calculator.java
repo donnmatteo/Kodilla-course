@@ -9,7 +9,7 @@ public class Calculator {
         this.b = b;
     }
 
-    public int getA() {
+    public int getA(){
         return a;
     }
 

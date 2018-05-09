@@ -13,11 +13,21 @@ public class TestingMain {
         }else{
             System.out.println("Error");
         }
-    }
 
-    Calculator calculator = new Calculator (15, 10);
+        Calculator calculator = new Calculator (15, 10);
         int addResult = calculator.add();
         int substractResult = calculator.substract();
 
-        if(addResult > )
+        if(addResult == 15 + 10){
+            System.out.println("test OK");
+        }else{
+            System.out.println("Error!");
+        }
+
+        if(substractResult == 15 - 10){
+            System.out.println("test OK");
+        }else{
+            System.out.println("Error!");
+        }
+    }
 }
