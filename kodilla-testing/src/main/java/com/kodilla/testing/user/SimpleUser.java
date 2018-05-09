@@ -2,7 +2,7 @@ package com.kodilla.testing.user;
 
 public class SimpleUser {
     private String username;
-    private String realName
+    private String realName;
     public SimpleUser(String username, String realName){
         this.username = username;
         this.realName = realName;
@@ -12,7 +12,7 @@ public class SimpleUser {
         return this.username;
 
     }
-    public String getrealName(){
+    public String getRealName(){
         return this.realName;
     }
 }
