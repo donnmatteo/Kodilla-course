@@ -27,11 +27,11 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorEmptyList(){
         //Given
-        ArrayList<Integer> theList = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
         //When
-        theList.add(null);
+        numbers.add(null);
         //Then
-        Assert.assertTrue(theList.size() == 0);
+        Assert.assertTrue(numbers.size() == 0);
     }
     @Test
     public void testOddNumbersExterminatorNormalList(){
