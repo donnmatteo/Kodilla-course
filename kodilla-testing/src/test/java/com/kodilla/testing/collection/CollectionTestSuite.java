@@ -46,10 +46,10 @@ public class CollectionTestSuite {
         OddNumbersExterminator test = new OddNumbersExterminator();
         //When
         ArrayList<Integer> resultList = test.exterminate(numbers);
-        System.out.println(resultList.size());
         //Then
         for(int n = 0; n < resultList.size(); n ++){
             Assert.assertEquals(0, resultList.get(n) % 2);
+            Assert.assertEquals(2, resultList.size());
         }
 
     }
