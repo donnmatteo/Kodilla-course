@@ -27,12 +27,22 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorEmptyList(){
         //Given
+        ArrayList<Integer> theList = new ArrayList<>();
+        //When
+        theList.add(null);
+        //Then
+        Assert.assertTrue(theList.size() == 0);
+    }
+    @Test
+    public void testOddNumbersExterminatorNormalList(){
+        //Given
         ArrayList<Integer> testList = new ArrayList<>();
+        //When
         Random theGenerator = new Random();
         for(int n = 0; n < 20; n++){
             testList.add(theGenerator.nextInt(50));
-        //When
-
         }
+        //Then
+
     }
 }
