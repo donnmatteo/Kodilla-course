@@ -49,8 +49,7 @@ public class CollectionTestSuite {
         //Then
         for(int n = 0; n < resultList.size(); n ++){
             Assert.assertEquals(0, resultList.get(n) % 2);
-            Assert.assertEquals(2, resultList.size());
         }
-
+        Assert.assertEquals(2, resultList.size());
     }
 }
