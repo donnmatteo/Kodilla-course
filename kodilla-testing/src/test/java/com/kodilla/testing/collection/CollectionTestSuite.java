@@ -28,21 +28,26 @@ public class CollectionTestSuite {
     public void testOddNumbersExterminatorEmptyList(){
         //Given
         ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> theList = new ArrayList<>();
         //When
         numbers.add(null);
         //Then
-        Assert.assertTrue(numbers.size() == 0);
+        Assert.assertTrue(theList.size() == 0);
     }
     @Test
     public void testOddNumbersExterminatorNormalList(){
         //Given
-        ArrayList<Integer> testList = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> theList = new ArrayList<>();
         //When
         Random theGenerator = new Random();
         for(int n = 0; n < 20; n++){
-            testList.add(theGenerator.nextInt(50));
+            numbers.add(theGenerator.nextInt(50));
         }
+        int checkNumber;
+        checkNumber = theList.get();
         //Then
-
+        Assert.assertTrue()
+        }
     }
 }
