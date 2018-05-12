@@ -11,7 +11,8 @@ public class ShapeCollector {
     }
     public boolean removeFigure(Shape shape){
     }
-    public String getFigure(int n){
+    public Square getFigure(int n){
+        return null;
     }
     public String showFigures(){
     }

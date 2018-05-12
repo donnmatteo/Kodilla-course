@@ -1,6 +1,7 @@
 package com.kodilla.testing.shape;
 
 
+
 import org.junit.*;
 
 
@@ -52,5 +53,15 @@ public class ShapeCollectorTestSuite {
     public void testGetFigure(){
         //Given
         ShapeCollector shapeCollector = new ShapeCollector();
+        Square square = new Square();
+        shapeCollector.addFigure(square);
+
+        //When
+        Square retrievedFigure;
+        retrievedFigure = shapeCollector.getFigure(0);
+
+        //Then
+        Assert.assertEquals(square, retrievedFigure);
+
     }
 }
