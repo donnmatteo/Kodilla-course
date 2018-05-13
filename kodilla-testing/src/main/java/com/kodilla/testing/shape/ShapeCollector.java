@@ -20,11 +20,11 @@ public class ShapeCollector {
 
     }
     public Shape getFigure(int n){
-        ShapeCollector theShape = null;
+        Shape theShape = null;
         if(n >= 0 && n < shapes.size()){
-            theShape = (ShapeCollector) shapes.get(n);
+            theShape = shapes.get(n);
         }
-        return (Shape) theShape;
+        return theShape;
     }
     public String showFigures(){
         return null;
