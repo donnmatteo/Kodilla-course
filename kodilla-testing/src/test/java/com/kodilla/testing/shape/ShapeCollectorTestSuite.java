@@ -40,6 +40,7 @@ public class ShapeCollectorTestSuite {
         //Given
         ShapeCollector shapeCollector = new ShapeCollector();
         Square square = new Square();
+        shapeCollector.addFigure(square);
 
         //When
         boolean result = shapeCollector.removeFigure(square);
@@ -57,11 +58,11 @@ public class ShapeCollectorTestSuite {
         shapeCollector.addFigure(square);
 
         //When
-        Square retrievedFigure;
+        Shape retrievedFigure;
         retrievedFigure = shapeCollector.getFigure(0);
 
         //Then
-        Assert.assertEquals(square, retrievedFigure);
+        Assert.assertTrue(retrievedFigure instanceof Square);
 
     }
 }

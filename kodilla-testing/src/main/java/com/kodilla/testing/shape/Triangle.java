@@ -2,8 +2,8 @@ package com.kodilla.testing.shape;
 
 public class Triangle implements Shape {
     @Override
-    public String getShape() {
-        return null;
+    public String getShapeName() {
+        return "Triangle";
     }
 
     @Override
