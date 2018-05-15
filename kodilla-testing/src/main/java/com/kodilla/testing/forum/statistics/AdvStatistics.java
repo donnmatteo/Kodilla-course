@@ -1,10 +1,8 @@
 package com.kodilla.testing.forum.statistics;
 
 
-import java.util.List;
-
 public class AdvStatistics {
-
+    private Statistics statistics;
     private int usersQuantity;
     private int postsQuantity;
     private int commentsQuantity;
@@ -12,46 +10,60 @@ public class AdvStatistics {
     private double averageCommentsCountPerUser;
     private double averageCommentsCountPerPost;
 
-    public void calculateAdvStatistics(Statistics statistics){
+    public AdvStatistics(Statistics statistics) {
+        this.statistics = statistics;
+    }
+
+    public void calculateAdvStatistics(){
         usersQuantity = statistics.userNames().size();
         postsQuantity = statistics.postsCount();
         commentsQuantity = statistics.commentsCount();
-        averagePostsCountPerUser = statistics.postsCount() / statistics.userNames().size();
-        averageCommentsCountPerUser = statistics.commentsCount() / statistics.userNames().size();
-        averageCommentsCountPerPost = statistics.commentsCount() / statistics.postsCount();
+        if(statistics.userNames().size() == 0){
+            averagePostsCountPerUser = 0;
+            averageCommentsCountPerUser = 0;
+        }else {
+            averagePostsCountPerUser = statistics.postsCount() / statistics.userNames().size();
+            averageCommentsCountPerUser = statistics.commentsCount() / statistics.userNames().size();
+        }
+        if(statistics.postsCount() == 0){
+            averageCommentsCountPerPost = 0;
+        }else {
+            averageCommentsCountPerPost = (double) statistics.commentsCount() / statistics.postsCount();
+        }
     }
 
-    public int getUsersQuantity(Statistics statistics) {
+    public int getUsersQuantity() {
         return usersQuantity;
     }
 
-    public int getPostsQuantity(Statistics statistics) {
+    public int getPostsQuantity() {
         return postsQuantity;
     }
 
-    public int getCommentsQuantity(Statistics statistics) {
+    public int getCommentsQuantity() {
         return commentsQuantity;
     }
 
-    public double getAveragePostsCountPerUser(Statistics statistics) {
+    public double getAveragePostsCountPerUser() {
         return averagePostsCountPerUser;
     }
 
-    public double getAverageCommentsCountPerUser(Statistics statistics) {
+    public double getAverageCommentsCountPerUser() {
         return averageCommentsCountPerUser;
     }
 
-    public double getAverageCommentsCountPerPost(Statistics statistics) {
+    public double getAverageCommentsCountPerPost() {
         return averageCommentsCountPerPost;
     }
 
-    public String showStatistcs() {
+    public void showStatistcs() {
         System.out.println("Users quantity: " + usersQuantity);
         System.out.println("Posts quantity: " + postsQuantity);
         System.out.println("Comments quantity: " + commentsQuantity);
         System.out.println("Average posts count pes user: " + averagePostsCountPerUser);
         System.out.println("Average comments count pes user: " + averageCommentsCountPerUser);
         System.out.println("Average comments count per post" + averageCommentsCountPerPost);
-        return null;
+
+
     }
 }

@@ -11,7 +11,7 @@ public class WeatherForecast {
     }
 
     public HashMap<Integer, Double> calculateForecast() {
-        HashMap<Integer, Double> resultMap = new HashMap<Integer, Double>();
+        HashMap<Integer, Double> resultMap = new HashMap<>();
 
         for(Map.Entry<Integer, Double> temperature :
                 temperatures.getTemperatures().entrySet()){
