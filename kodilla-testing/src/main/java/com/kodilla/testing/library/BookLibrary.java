@@ -20,12 +20,6 @@ public class BookLibrary {
     }
 
     public List<Book> listBooksInHandsOf(LibraryUser libraryUser){
-        List<Book> testList = new ArrayList<>();
-        List<Book> resultList = libraryDatabase.listBooksInHandsOf(libraryUser);
-        for(int n = 1; n <= resultList.size(); n++){
-            Book book1 = new Book("Title" + n, "Author" + n, 1989 + n);
-            testList.add(book1);
-        }
-        return testList;
+        return libraryDatabase.listBooksInHandsOf(libraryUser);
     }
 }
