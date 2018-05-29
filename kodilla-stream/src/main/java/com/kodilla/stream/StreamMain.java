@@ -1,34 +1,28 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoemBeautifier;
-import com.kodilla.stream.iterate.NumbersGenerator;
-import com.kodilla.stream.lambda.*;
-import com.kodilla.stream.reference.FunctionalCalculator;
+
+import com.kodilla.stream.forumuser.Forum;
+import com.kodilla.stream.forumuser.ForumUser;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StreamMain {
     public static void main(String[] args){
-        ExpressionExecutor expressionExecutor = new ExpressionExecutor();
 
-        System.out.println("Calculating expressions with lambdas");
-        expressionExecutor.executeExpression(10, 5, (a, b) -> a + b);
-        expressionExecutor.executeExpression(10, 5, (a, b) -> a - b);
-        expressionExecutor.executeExpression(10, 5, (a, b) -> a * b);
-        expressionExecutor.executeExpression(10, 5, (a, b) -> a / b);
+        Forum forum = new Forum();
+        Map<Integer, ForumUser> theForumUserMap = forum.getList().stream()
+                .filter(ForumUser -> ForumUser.getSex() == 'M')
+                .filter(ForumUser -> Period.between(ForumUser.getDateOfBirth(), LocalDate.now()).getYears() >= 20)
+                .filter(ForumUser -> ForumUser.getPostCount() >= 1)
+                .collect(Collectors.toMap(ForumUser::getUserId, ForumUser -> ForumUser));
 
-        System.out.println("Calculating expressions with method references");
-        expressionExecutor.executeExpression(3, 4, FunctionalCalculator::multiplyAByB);
-        expressionExecutor.executeExpression(3, 4, FunctionalCalculator::addAToB);
-        expressionExecutor.executeExpression(3, 4, FunctionalCalculator::subBFromA);
-        expressionExecutor.executeExpression(3, 4, FunctionalCalculator::divideAByB);
+        theForumUserMap.entrySet().stream()
+                .map(entry -> "User ID: " + entry.getKey() + "- " + entry.getValue())
+                .forEach(System.out::println);
 
-        PoemBeautifier poemBeautifier = new PoemBeautifier();
-        System.out.println("Making text more beautiful");
-        poemBeautifier.beautify("Regular text", text -> "Beuauty " + text + " is now on!");
-        poemBeautifier.beautify("Regular text", text -> text.toUpperCase());
-        poemBeautifier.beautify("Regular text", text -> text.replace("Regular", "Beautiful"));
-
-        System.out.println("Using Stream to generate even numbers from 1 to 20");
-        NumbersGenerator.generateEven(20);
 
 
 
