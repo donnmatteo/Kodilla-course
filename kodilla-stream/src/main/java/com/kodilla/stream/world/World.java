@@ -1,6 +1,7 @@
 package com.kodilla.stream.world;
 
 import java.math.BigDecimal;
+import java.text.Bidi;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public final class World {
     public BigDecimal getPeopleQuantity(){
         return continents.stream()
                 .flatMap(cont -> cont.countries().stream())
-                .reduce( )
+                .reduce(BigDecimal.ZERO, )
 
     }
 }
