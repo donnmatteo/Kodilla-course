@@ -25,7 +25,7 @@ public class WorldTestSuite {
         earth.addContinent(continent1);
 
         //Then
-        Assert.assertEquals(51674848, earth.getPeopleQuantity());
+        Assert.assertEquals(new BigDecimal("51674848"), earth.getPeopleQuantity());
 
     }
 }
