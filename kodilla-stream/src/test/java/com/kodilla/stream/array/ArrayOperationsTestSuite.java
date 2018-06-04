@@ -18,7 +18,7 @@ public class ArrayOperationsTestSuite {
         numbers[4] = 1;
 
         //Then
-        Assert.assertEquals(3, ArrayOperations.getAverage(numbers));
+        Assert.assertEquals(3, ArrayOperations.getAverage(numbers), 0.001);
 
 
     }
