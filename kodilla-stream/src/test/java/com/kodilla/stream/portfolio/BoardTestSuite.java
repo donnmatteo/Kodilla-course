@@ -153,7 +153,7 @@ public class BoardTestSuite {
                 .getAsDouble();
 
         //Then
-        Assert.assertEquals(50, averageTimeTasks, 0.001);
+        Assert.assertEquals(10, averageTimeTasks, 0.001);
 
 
     }
