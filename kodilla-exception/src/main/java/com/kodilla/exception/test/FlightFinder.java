@@ -10,6 +10,7 @@ public class FlightFinder {
         airports.put("Heathrow", true);
         airports.put("Modlin", false);
 
+
         if(!airports.containsKey(flight.getArrivalAirport()) || !airports.containsKey(flight.getDepartureAirport())){
             throw new RouteNotFoundException("Sorry, something went wrong");
         }
