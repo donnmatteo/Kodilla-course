@@ -2,11 +2,11 @@ package com.kodilla.good.patterns.challenges.challengeFlights;
 
 import java.util.Objects;
 
-public class Flight {
-    private String departureCity;
-    private String arrivalCity;
+public final class Flight {
+    private final String departureCity;
+    private final String arrivalCity;
 
-    public Flight(String departureCity, String arrivalCity) {
+    public Flight(final String departureCity, final String arrivalCity) {
         this.departureCity = departureCity;
         this.arrivalCity = arrivalCity;
     }
@@ -32,5 +32,13 @@ public class Flight {
     public int hashCode() {
 
         return Objects.hash(departureCity, arrivalCity);
+    }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "departureCity='" + departureCity + '\'' +
+                ", arrivalCity='" + arrivalCity + '\'' +
+                '}';
     }
 }
