@@ -1,6 +1,5 @@
 package com.kodilla.patterns.builder.checkers;
 
-import java.util.Arrays;
 
 public class Board {
     public final static int MIN_INDEX = 0;
