@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-05-16T08:01:00" hostname="MacBook-Air-Mateusz.local" time="0.019">
+<testsuite name="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-07-10T07:24:50" hostname="MacBook-Air-Mateusz.local" time="0.041">
   <properties/>
-  <testcase name="testCalculateAdvStatistics0Posts" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.008"/>
+  <testcase name="testCalculateAdvStatistics0Posts" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.023"/>
   <testcase name="testCalculateAdvStatistics0Users" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatistics0Comments" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatistics0Comments" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.004"/>
   <testcase name="testCalculateAdvStatisticsWithMock6" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.002"/>
-  <testcase name="testCalculateAdvStatisticsBiggerAmountOfPostsThanComments" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsBiggerAmountOfPostsThanComments" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.002"/>
   <testcase name="testCalculateAdvStatistics1000Posts" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.002"/>
   <testcase name="testCalculateAdvStatisticsBiggerAmountOfCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.AdvStatisticsTestSuite" time="0.002"/>
   <system-out><![CDATA[]]></system-out>

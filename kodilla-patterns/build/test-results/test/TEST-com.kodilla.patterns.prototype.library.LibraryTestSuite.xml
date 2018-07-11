@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-10T07:24:37" hostname="MacBook-Air-Mateusz.local" time="0.098">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.prototype.library.LibraryTestSuite" time="0.098"/>
+  <system-out><![CDATA[com.kodilla.patterns.prototype.library.Library@25d6ffd5
+com.kodilla.patterns.prototype.library.Library@2f4c86c1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

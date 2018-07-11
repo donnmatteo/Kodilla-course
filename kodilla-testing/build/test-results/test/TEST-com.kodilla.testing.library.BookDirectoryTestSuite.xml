@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-16T08:01:00" hostname="MacBook-Air-Mateusz.local" time="0.185">
+<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-07-10T07:24:50" hostname="MacBook-Air-Mateusz.local" time="0.908">
   <properties/>
-  <testcase name="testListBooksInHandOf1Book" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.172"/>
-  <testcase name="testListBooksWithConditionFragmentShorterThan3" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.006"/>
-  <testcase name="testListBooksInHandOf5Book" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.0"/>
-  <testcase name="testListBooksInHandOf0Books" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.0"/>
-  <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
-  <testcase name="testListBooksWithConditionReturnList" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
+  <testcase name="testListBooksInHandOf1Book" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.796"/>
+  <testcase name="testListBooksWithConditionFragmentShorterThan3" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.046"/>
+  <testcase name="testListBooksInHandOf5Book" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
+  <testcase name="testListBooksInHandOf0Books" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.008"/>
+  <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.025"/>
+  <testcase name="testListBooksWithConditionReturnList" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
