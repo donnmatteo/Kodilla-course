@@ -19,6 +19,10 @@ import java.math.BigDecimal;
 public class InvoiceDaoTestSuite {
     @Autowired
     InvoiceDao invoiceDao;
+    @Autowired
+    ItemDao itemDao;
+    @Autowired
+    ProductDao productDao;
 
     @Test
     public void testInvoiceDaoSave() {
@@ -36,7 +40,11 @@ public class InvoiceDaoTestSuite {
         item2.setInvoice(invoice);
 
         //When
+        productDao.save(product1);
+        productDao.save(product2);
         invoiceDao.save(invoice);
+        itemDao.save(item1);
+        itemDao.save(item2);
         int id = invoice.getId();
 
         //Then
