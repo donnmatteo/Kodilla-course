@@ -45,7 +45,7 @@ public class StoredProcTestSuite {
         ResultSet rs = statement.executeQuery(sqlCheckTable);
         int howMany = -1;
         if (rs.next()) {
-            howMany = rs.getInt("IS_BESTSELLER");
+            howMany = rs.getInt("IS_BESTELLER");
         }
         assertEquals(1, howMany);
     }
