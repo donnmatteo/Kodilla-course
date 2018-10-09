@@ -14,16 +14,4 @@ public class EBayTestingApp {
         searchField.sendKeys("Laptop");
         searchField.submit();
     }
-
-    public final static String CHROME = "CHROME_DRIVER";
-    public static WebDriver getDriver(final String driver) {
-
-        System.setProperty("webdriver.chrome.driver", "/Users/Mateusz/Documents/Development/Projects/chromedriver");
-
-        if(driver.equals(CHROME)) {
-            return new ChromeDriver();
-        } else {
-            return null;
-        }
-    }
 }
